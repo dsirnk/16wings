@@ -1,1 +1,35 @@
-img { width: 200px; height: 200px; }
+@keyframes sway {
+	0% { transform: rotateZ(-15deg) rotateX(55deg); }
+	30% { transform: rotateZ(20deg) rotateX(60deg); animation-timing-function: ease-in-out; }
+	60% { transform: rotateZ(-20deg) rotateX(55deg); animation-timing-function: ease-in-out;  }
+	100% { transform: rotateZ(0deg) rotateX(58deg); animation-timing-function: cubic-bezier(0.990, 0.000, 0.890, 0.435);  }
+}
+@keyframes fall {
+	60% { /*-webkit-filter: drop-shadow(0px 60px 40px rgba(0,0,0,0));*/ }
+	100% { margin-top: 500px; /*-webkit-filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.6));*/ }
+}
+body {
+	margin: 0;
+	overflow: hidden;
+}
+.flyingwings {
+	position: relative;
+	perspective-origin: center;
+	perspective: 1800px;
+	z-index: -1;
+}
+.flyingwings img {
+	position: absolute;
+	width: 28%;
+	transform-origin: 0px -400px 0px;
+	animation-name: fall, sway;
+	animation-duration: 7s, 8s;
+	animation-fill-mode: both;
+	animation-timing-function: linear, ease-in-out;
+}
+.flyingwings img:nth-child(1) { top: -60px; }
+.flyingwings img:nth-child(2) { top: -45px; left: 50%; animation-delay: 2s; transform: rotateX(58deg); }
+.flyingwings img:nth-child(3) { width: 28%; top: -122px; left: 22%; animation-delay: 3.2s; }
+.flyingwings img:nth-child(4) { width: 25%; top: -55px; left: 38%; animation-delay: 4.4s; }
+.flyingwings img:nth-child(5) { width: 28%; top: -18px; left: 70%; animation-delay: 2.25s; }
+.flyingwings img:nth-child(6) { width: 23%; top: 0px; left: 55%; animation-delay: 3.8s; }
