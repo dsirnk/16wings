@@ -5,6 +5,18 @@
 	<title>16 Wings, FTW!</title>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="scripts/polyfills/prefixfree.min.js"></script>
+
+	<script src="scripts/lib/snowfall.jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.collectonme').hide();
+            //Start the snow default options you can also make it snow in certain elements, etc.
+                $(document).snowfall('clear');
+                $(document).snowfall({image :"images/wing.png", minSize: 10, maxSize:32});
+
+        });
+     </script>
 	<link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
