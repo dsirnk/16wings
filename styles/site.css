@@ -156,8 +156,9 @@
 	100% { margin-top: 500px; /*-webkit-filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.6));*/ }
 }
 .quoteBlock {
-	width: 150px;
+	width: 180px;
 	position: absolute;
+	line-height: 1.5;
 }
 .position1 {
 	top: -90px;
@@ -210,9 +211,12 @@
 }
 .quoteBlock a {
 	font-family: 'Playball', cursive;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 900;
 	color: #0645AD;
+}
+.quoteBlock a + h3 {
+	font-size: 18px;
 }
 .flyingwings {
 	position: relative;
