@@ -1,4 +1,4 @@
-/* **** **** RESET STARTS **** *** */
+/* RESET STARTS */
 		html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,button {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; font-weight:normal; font-style:inherit; font-family:inherit; background:transparent;}
 
 		html {overflow-y:scroll;}
@@ -55,46 +55,82 @@
 		ol {margin:0 0 16px 24px;}
 		sup {position:relative; top:-0.4em; font-size:80%;}
 		sub {position:relative; top:0.1em; font-size:80%;}
+/* RESET ENDS */
 
 
 
 
+/* FONT SETTING STARTS */
+		@font-face {
+		    font-family: 'din_blackregular';
+		    src: url('../images/din-black-webfont.eot');
+		    src: url('../images/din-black-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('../images/din-black-webfont.woff2') format('woff2'),
+		         url('../images/din-black-webfont.woff') format('woff'),
+		         url('../images/din-black-webfont.ttf') format('truetype'),
+		         url('../images/din-black-webfont.svg#din_blackregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
 
-@font-face {
-    font-family: 'din_blackregular';
-    src: url('../images/din-black-webfont.eot');
-    src: url('../images/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../images/din-black-webfont.woff2') format('woff2'),
-         url('../images/din-black-webfont.woff') format('woff'),
-         url('../images/din-black-webfont.ttf') format('truetype'),
-         url('../images/din-black-webfont.svg#din_blackregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+		}
 
-}
+		h1, h2, h3, h4, h5, h6, #Logo, .btn {font-family:'din_blackregular', Arial, Tahoma, sans-serif;}
+		h2 {margin:0 0 24px 0; font-size:30px;}
+		p {margin:0 0 16px 0; font-size:16px; line-height:22px;}
+/* FONT SETTING ENDS */
 
-h1, h2, h3, h4, h5, h6, #Logo {font-family:'din_blackregular', Arial, Tahoma, sans-serif;}
+
+
+
+/* BUTTON STARTS */
+		.btn {position:relative; padding:20px 30px; width:auto; height:auto; display:inline-block; overflow:hidden; font-size:20px; cursor:pointer; color:#fff; text-decoration:none; text-transform:uppercase; background:#c21331;}
+			.btn label {position:relative; z-index:2; cursor:pointer;}
+			.btn span {position:absolute; display:block; overflow:hidden; opacity:0; z-index:1; cursor:pointer; background:#000; transition:all 0.3s ease-in-out;}
+			.btn:hover span {opacity:1;}
+
+		.shine {}
+		.shine span {top:-150px; left:-50%; width:25%; height:300px; transform:rotate(45deg);}
+			.shine span {background:#85ae37; transition:all 0.6s ease-in-out;}
+			.shine span:first-of-type {background:#fff; transition:all 0.3s ease-in-out;}
+
+			.shine:hover span {width:200%;}
+/* BUTTON ENDS */
+
+
+
 
 /* HEADER STARTS */
-#Logo {position:absolute; top:0; right:0; padding:0 8px; height:40px; line-height:40px; color:#fff; text-decoration:none; line-height:; z-index:100; background:#000;}
-	#Logo img {margin-top:8px; width:24px; height:24px;}
-	#Logo span {margin-right:4px; height:40px; float:left; font-size:20px;}
+		#Logo {position:absolute; top:0; right:0; padding:0 8px; height:40px; line-height:40px; color:#fff; text-decoration:none; line-height:; z-index:100; background:#000;}
+			#Logo img {margin-top:8px; width:24px; height:24px;}
+			#Logo span {margin-right:4px; height:40px; float:left; font-size:20px;}
 
-#BannerWrapper {position:relative; width:100%; height:432px; overflow:hidden;}
-	#BannerWrapper .background {position:absolute; top:0; left:0; width:100%;}
-	#BannerWrapper .background img {width:100%;}
-	#BannerWrapper .BannerContent {position:relative; margin:auto; width:960px; height:432px; z-index:2;}
-		#BannerWrapper .BannerContent .organicFacts {position:absolute; top:157px; right:0;}
-		#BannerWrapper .BannerContent .header {position:absolute; bottom:0; left:0;}
-		#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2, #BannerWrapper .BannerContent h3 {color:#c21331; text-transform:uppercase;}
-		#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2 {text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -webkit-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -moz-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;}
-		#BannerWrapper .BannerContent h1 {width:200px; float:left; font-size:175px;}
-		#BannerWrapper .BannerContent .subheader {position:relative; top:20px; float:left;}
-		#BannerWrapper .BannerContent h2 {font-size:80px;}
-		#BannerWrapper .BannerContent h3 {position:relative; top:-10px; font-size:18px; color:#fff; text-shadow:0 2px 0 #000; -webkit-text-shadow:0 2px 0 #000; -moz-text-shadow:0 2px 0 #000;}
+		#BannerWrapper {position:relative; width:100%; height:432px; overflow:hidden;}
+			#BannerWrapper .background {position:absolute; top:0; left:0; width:100%;}
+			#BannerWrapper .background img {width:100%;}
+			#BannerWrapper .BannerContent {position:relative; margin:auto; width:960px; height:432px; z-index:2;}
+				#BannerWrapper .BannerContent .organicFacts {position:absolute; top:157px; right:0;}
+				#BannerWrapper .BannerContent .header {position:absolute; bottom:0; left:0;}
+				#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2, #BannerWrapper .BannerContent h3 {color:#c21331; text-transform:uppercase;}
+				#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2 {text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -webkit-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -moz-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;}
+				#BannerWrapper .BannerContent h1 {width:200px; float:left; font-size:175px;}
+				#BannerWrapper .BannerContent .subheader {position:relative; top:20px; float:left;}
+				#BannerWrapper .BannerContent h2 {font-size:80px;}
+				#BannerWrapper .BannerContent h3 {position:relative; top:-10px; font-size:18px; color:#fff; text-shadow:0 2px 0 #000; -webkit-text-shadow:0 2px 0 #000; -moz-text-shadow:0 2px 0 #000;}
 /* HEADER ENDS */
 
 
+
+
 /* CONTENT STARTS */
-.ContentWrapper {margin:auto; width:960px; background:#ccc;}
+		#ContentWrapper {margin:auto; width:960px;}
+			#ContentWrapper .Content {margin:64px 0 8px 0;}
+
+			.SectionWrapper {position:relative; width:100%; overflow:hidden;}
+				.SectionWrapper .SectionImage {float:right;}
+				.SectionWrapper .Details {width:736px; float:left;}
+
+				.SectionWrapper.right .SectionImage {float:left;}
+				.SectionWrapper.right .Details {float:right;}
+
+		.DivideWings {margin:52px 0; height:14px; border:0; background:url(../images/wing-divide.png) top left repeat-x;}
 /* CONTENT ENDS */
