@@ -1,33 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>16 Wings, FTW!</title>
-	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="scripts/polyfills/prefixfree.min.js"></script>
+<html>
+	<head>
+		<title>16 Wings, FTW!</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<script src="scripts/modernizr.js" type="text/javascript"></script>
+		<script src="scripts/polyfills/prefixfree.min.js"></script>
+		<link rel="stylesheet" href="styles/site.css" />
 
-	<script src="scripts/lib/snowfall.jquery.min.js"></script>
+		<script src="scripts/jquery.js" type="text/javascript"></script>
+		<script src="scripts/lib/snowfall.jquery.min.js"></script>
+		<!--[if lte IE 8]><script src="scripts/ie8.js" type="text/javascript"></script><![endif]-->
+	</head>
+	<body>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.collectonme').hide();
-            //Start the snow default options you can also make it snow in certain elements, etc.
-                $(document).snowfall('clear');
-                $(document).snowfall({image :"images/wing.png", minSize: 10, maxSize:32});
+	    <script type="text/javascript">
+	        $(document).ready(function(){
+	            //Start the snow default options you can also make it snow in certain elements, etc.
+	                $(document).snowfall('clear');
+	                $(document).snowfall({image :"images/wing.png", minSize: 10, maxSize:32});
 
-        });
-     </script>
-	<link rel="stylesheet" href="styles/site.css">
-</head>
-<body>
-	<h1>How many wings could you have?</h1>
-	<div class="flyingwings">
-		<img src="images/wing1.jpg">
-		<img src="images/wing2.jpg">
-		<img src="images/wing3.jpg">
-		<img src="images/wing4.jpg">
-		<img src="images/wing5.jpg">
-		<img src="images/wing6.jpg">
-	</div>
-</body>
+	        });
+	     </script>
+
+		<!-- **** **** BODY STARTS **** *** -->
+		<!-- <div class="flyingwings">
+			<img src="images/wing1.jpg">
+			<img src="images/wing2.jpg">
+			<img src="images/wing3.jpg">
+			<img src="images/wing4.jpg">
+			<img src="images/wing5.jpg">
+			<img src="images/wing6.jpg">
+		</div> -->
+		<div id="Wrapper">
+			<a href="#" id="Logo"><span>16</span><img src="images/chicken_leg@4x.png" alt="16Wings" /></a>
+
+
+			<!-- hero banner starts -->
+			<div id="BannerWrapper">
+				<div class="BannerContent">
+					<div class="header">
+						<h1>16</h1>
+						<div class="subheader">
+							<h2>Wings</h2>
+							<h3>or 2 pounds of wings;<br />a single person portion</h3>
+						</div>
+					</div>
+					<img class="organicFacts" src="images/100organicfacts.png" alt="100% Organic Facts" />
+				</div>
+				<div class="background"><img src="images/wings_print_1003.jpg" alt="" /></div>
+			</div>
+			<!-- hero banner ends -->
+
+
+
+			<div id="ContentWrapper">
+				<div class="Content">
+		<!-- **** **** BODY STARTS **** *** -->
+
+
+		<div class="SectionWrapper">
+			<div class="Details">
+				<h2>Absolutely Reliable Source</h2>
+				<p>Xukipedia is 100% reliable source from the collective internet. We gather sources from Health Professional Xu, Weight Trainer Xu, Tinder Client Xu, Web Developer Xu, Professor Xu, Happy Co-op Xu, and Doctor Xu has been featured in news in the past.</p>
+				<p>Trust our source and you will always be 100%-84%<sup>&Dagger;</sup> correct.</p>
+				<p><a href="/learn-more.html" class="btn shine" title="Learn More"><label>Learn More</label><span></span><span></span></a></p>
+			</div>
+			<img src="images/xukipedia.png" class="SectionImage" alt="Xukipedia" />
+		</div>
+
+		<hr class="DivideWings" />
+
+		<div class="SectionWrapper right">
+			<div class="Details">
+				<h2>Approved by Christine!</h2>
+				<p>Christina is expert in gathering less than yesterday relevant news from absolutely reliable source, Xukipedia and the internet.  To get Christine's seal of approval, the source must be 100%-84%<sup>&Dagger;</sup> reliable.</p>
+				<p>You can write to Christine to get your 100%-84%<sup>&Dagger;</sup> reliable news!</p>
+			</div>
+			<img src="images/ribbon.png" class="SectionImage" alt="Christine's Approval Seal" />
+		</div>
+
+		<hr class="DivideWings" />
+
+
+
+		<!-- **** **** BODY ENDS **** *** -->
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<div class="footerContent">
+			</div>
+		</div>
+
+
+		<!-- **** **** BODY ENDS **** *** -->
+	</body>
 </html>
