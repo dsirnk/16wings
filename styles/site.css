@@ -65,7 +65,6 @@
 		    font-family: 'din_blackregular';
 		    src: url('../images/din-black-webfont.eot');
 		    src: url('../images/din-black-webfont.eot?#iefix') format('embedded-opentype'),
-		         url('../images/din-black-webfont.woff2') format('woff2'),
 		         url('../images/din-black-webfont.woff') format('woff'),
 		         url('../images/din-black-webfont.ttf') format('truetype'),
 		         url('../images/din-black-webfont.svg#din_blackregular') format('svg');
@@ -145,52 +144,36 @@
 	60% { /*-webkit-filter: drop-shadow(0px 60px 40px rgba(0,0,0,0));*/ }
 	100% { margin-top: 500px; /*-webkit-filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.6));*/ }
 }
-body {
-	margin: 0;
-	overflow: hidden;
-}
-h2, h3 {
+h2.more-wings {
 	font-family: 'Sorts Mill Goudy', serif;
-	font-size: 32px;
-	margin: 0px;
-}
-h3 {
-	font-size: 16px;
-}
-h4 {
-
-	font-size: 18px;
-}
-p {
-	margin: 0px;
 }
 .quoteBlock {
 	width: 150px;
 	position: absolute;
 }
 .position1 {
-	top: 200px;
-	left: 20%;
+	top: -90px;
+	left: -100%;
 }
 .position2 {
-	top: 200px;
-	right: 20%;
+	top: -110px;
+	right: -100%;
 }
 .position3 {
-	top: 400px;
-	left: 15%;
+	top: 80px;
+	left: -130%;
 }
 .position4 {
-	top: 400px;
-	right: 15%;
+	top: 90px;
+	right: -140%;
 }
 .position5 {
-	top: 600px;
-	left: 20%;
+	top: 280px;
+	left: -80%;
 }
 .position6 {
-	top: 600px;
-	right: 20%
+	top: 280px;
+	right: -80%
 }
 .logoContainer {
 	width: 200px;
