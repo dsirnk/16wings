@@ -104,10 +104,13 @@
 			#Logo span {margin-right:4px; height:40px; float:left; font-size:20px;}
 
 		#BannerWrapper {position:relative; width:100%; height:432px; overflow:hidden;}
+			@media (max-width: 768px) {
+				#BannerWrapper { /*images/wings_print_1003.jpg*/ }
+			}
 			#BannerWrapper .background {position:absolute; top:0; left:0; width:100%;}
 			#BannerWrapper .background img {width:100%;}
-			#BannerWrapper .BannerContent {position:relative; margin:auto; width:960px; height:432px; z-index:2;}
-				#BannerWrapper .BannerContent .organicFacts {position:absolute; top:157px; right:0;}
+			#BannerWrapper .BannerContent {position:relative; margin:auto; max-width:960px; height:432px; z-index:2;}
+				#BannerWrapper .BannerContent .organicFacts {position:absolute; top:157px; right:0; z-index: -1;}
 				#BannerWrapper .BannerContent .header {position:absolute; bottom:0; left:0;}
 				#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2, #BannerWrapper .BannerContent h3 {color:#c21331; text-transform:uppercase;}
 				#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2 {text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -webkit-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -moz-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;}
@@ -184,6 +187,17 @@ h2.more-wings {
 	left: 50%;
 	margin-left: -100px;
 	margin-top: -150px;
+}
+@media (max-width: 768px) {
+	.logoContainer {
+		top: auto;
+		margin-top: 20px;
+	}
+	.logoContainer .quoteBlock {
+		display: block;
+		width: 100%;
+		position: static;
+	}
 }
 .logoContainer img {
 	width: 150px;
