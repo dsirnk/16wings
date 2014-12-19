@@ -104,13 +104,10 @@
 			#Logo span {margin-right:4px; height:40px; float:left; font-size:20px;}
 
 		#BannerWrapper {position:relative; width:100%; height:432px; overflow:hidden;}
-			@media (max-width: 768px) {
-				#BannerWrapper { /*images/wings_print_1003.jpg*/ }
-			}
 			#BannerWrapper .background {position:absolute; top:0; left:0; width:100%;}
 			#BannerWrapper .background img {width:100%;}
 			#BannerWrapper .BannerContent {position:relative; margin:auto; max-width:960px; height:432px; z-index:2;}
-				#BannerWrapper .BannerContent .organicFacts {position:absolute; top:157px; right:0; z-index: -1;}
+				#BannerWrapper .BannerContent .organicFacts {position:absolute; top:157px; right:25px; z-index: -1;}
 				#BannerWrapper .BannerContent .header {position:absolute; bottom:0; left:0;}
 				#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2, #BannerWrapper .BannerContent h3 {color:#c21331; text-transform:uppercase;}
 				#BannerWrapper .BannerContent h1, #BannerWrapper .BannerContent h2 {text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -webkit-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; -moz-text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;}
@@ -118,23 +115,34 @@
 				#BannerWrapper .BannerContent .subheader {position:relative; top:20px; float:left;}
 				#BannerWrapper .BannerContent h2 {font-size:80px;}
 				#BannerWrapper .BannerContent h3 {position:relative; top:-10px; font-size:18px; color:#fff; text-shadow:0 2px 0 #000; -webkit-text-shadow:0 2px 0 #000; -moz-text-shadow:0 2px 0 #000;}
+			@media (max-width: 767px) {
+				#BannerWrapper { background: url(../images/wings_print_1003.jpg) no-repeat center center; background-size: cover; }
+				#BannerWrapper .background img {display: none;}
+				#BannerWrapper .BannerContent .organicFacts { top: 25px; }
+			}
 /* HEADER ENDS */
 
 
 
 
 /* CONTENT STARTS */
-		#ContentWrapper {margin:auto; width:960px;}
-			#ContentWrapper .Content {margin:64px 0 8px 0;}
 
-			.SectionWrapper {position:relative; width:100%; overflow:hidden;}
-				.SectionWrapper .SectionImage {float:right;}
-				.SectionWrapper .Details {width:736px; float:left;}
-
-				.SectionWrapper.right .SectionImage {float:left;}
-				.SectionWrapper.right .Details {float:right;}
+		#ContentWrapper .Content {margin:64px 0 8px 0;}
+		.SectionWrapper {position:relative; width:100%; overflow:hidden;}
+		.SectionWrapper .Details {padding: 0 2%;}
+			@media (min-width: 768px) {
+				#ContentWrapper {margin:auto; max-width:960px;}
+					.SectionWrapper .SectionImage {float:right;}
+					.SectionWrapper .Details {max-width:70%; float:left;}
+					.SectionWrapper.right .SectionImage {float:left;}
+					.SectionWrapper.right .Details {float:right;}
+			}
+			@media (max-width: 767px) {
+				.SectionWrapper { text-align: center; }
+			}
 
 		.DivideWings {margin:52px 0; height:14px; border:0; background:url(../images/wing-divide.png) top left repeat-x;}
+		.footer { padding: 0 25px 50px; }
 /* CONTENT ENDS */
 
 @keyframes sway {
@@ -146,9 +154,6 @@
 @keyframes fall {
 	60% { /*-webkit-filter: drop-shadow(0px 60px 40px rgba(0,0,0,0));*/ }
 	100% { margin-top: 500px; /*-webkit-filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.6));*/ }
-}
-h2.more-wings {
-	font-family: 'Sorts Mill Goudy', serif;
 }
 .quoteBlock {
 	width: 150px;
@@ -188,7 +193,7 @@ h2.more-wings {
 	margin-left: -100px;
 	margin-top: -150px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.logoContainer {
 		top: auto;
 		margin-top: 20px;
@@ -201,7 +206,6 @@ h2.more-wings {
 }
 .logoContainer img {
 	width: 150px;
-	height: 150px;
 	margin-bottom: 0px;
 }
 .quoteBlock a {
