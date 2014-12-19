@@ -120,6 +120,9 @@
 				#BannerWrapper .background img {display: none;}
 				#BannerWrapper .BannerContent .organicFacts { top: 25px; }
 			}
+			@media (max-width: 479px) {
+				#BannerWrapper .BannerContent h1 { font-size: 100px; }
+			}
 /* HEADER ENDS */
 
 
