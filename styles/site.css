@@ -28,14 +28,13 @@ p {
 	margin: 0px;
 }
 .quoteBlock {
-	width: 200px;
+	width: 150px;
 	position: absolute;
 }
 .position1 {
 	top: 200px;
 	left: 20%;
 }
-
 .position2 {
 	top: 200px;
 	right: 20%;
@@ -63,13 +62,19 @@ p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-left: -150px;
+	margin-left: -100px;
 	margin-top: -150px;
 }
 .logoContainer img {
 	width: 150px;
 	height: 150px;
 	margin-bottom: 0px;
+}
+.quoteBlock a {
+	font-family: 'Playball', cursive;
+	font-size: 16px;
+	font-weight: 900;
+	color: #0645AD;
 }
 .flyingwings {
 	position: relative;
