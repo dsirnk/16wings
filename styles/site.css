@@ -149,6 +149,70 @@ body {
 	margin: 0;
 	overflow: hidden;
 }
+h2, h3 {
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 32px;
+	margin: 0px;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+
+	font-size: 18px;
+}
+p {
+	margin: 0px;
+}
+.quoteBlock {
+	width: 150px;
+	position: absolute;
+}
+.position1 {
+	top: 200px;
+	left: 20%;
+}
+.position2 {
+	top: 200px;
+	right: 20%;
+}
+.position3 {
+	top: 400px;
+	left: 15%;
+}
+.position4 {
+	top: 400px;
+	right: 15%;
+}
+.position5 {
+	top: 600px;
+	left: 20%;
+}
+.position6 {
+	top: 600px;
+	right: 20%
+}
+.logoContainer {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -150px;
+}
+.logoContainer img {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 0px;
+}
+.quoteBlock a {
+	font-family: 'Playball', cursive;
+	font-size: 16px;
+	font-weight: 900;
+	color: #0645AD;
+}
 .flyingwings {
 	position: relative;
 	perspective-origin: center;
